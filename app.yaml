@@ -1,0 +1,14 @@
+application: google_auth
+runtime: python36
+threadsafe: true
+api_version: 1
+
+handlers:
+  - url: .*
+    script: main.app
+
+libraries:
+  - name: jinja2
+    version: "latest"
+  - name: webapp2
+version: "latest"
